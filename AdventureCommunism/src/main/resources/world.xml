@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<world>
+  <name>Adventure Communist</name>
+  <logo></logo>
+  <money>0</money>
+  <score>0</score>
+  <totalangels>0</totalangels>
+  <activeangels>0</activeangels>
+  <angelbonus>123</angelbonus>
+  <lastupdate>12345</lastupdate>
+  <products>
+    <product>
+      <id>1</id>
+      <name>marteau</name>
+      <logo></logo>
+      <cout>2</cout>
+      <croissance>2</croissance>
+      <revenu>4</revenu>
+      <vitesse>2</vitesse>
+      <quantite>0</quantite>
+      <timeleft>0</timeleft>
+      <managerUnlocked>false</managerUnlocked>
+      <palliers>
+        <pallier>
+          <name>Apprenti Travailleur</name>
+          <logo></logo>
+          <seuil>5</seuil>
+          <idcible>1</idcible>
+          <ratio>2</ratio>
+          <typeratio>gain</typeratio>
+          <unlocked>false</unlocked>
+        </pallier>
+        <pallier>
+            <name>Travailleur confirmé</name>
+            <logo></logo>
+            <seuil>10</seuil>
+            <idcible>1</idcible>
+            <ratio>2</ratio>
+            <typeratio>vitesse</typeratio>
+            <unlocked>false</unlocked>
+          </pallier>
+          <pallier>
+            <name>Travailleur expert</name>
+            <logo></logo>
+            <seuil>20</seuil>
+            <idcible>1</idcible>
+            <ratio>3</ratio>
+            <typeratio>ange</typeratio>
+            <unlocked>false</unlocked>
+          </pallier>
+      </palliers>
+    </product>
+    <product>
+      <id>2</id>
+      <name>Faucille</name>
+      <logo></logo>
+      <cout>4</cout>
+      <croissance>4</croissance>
+      <revenu>6</revenu>
+      <vitesse>4</vitesse>
+      <quantite>0</quantite>
+      <timeleft>0</timeleft>
+      <managerUnlocked>False</managerUnlocked>
+      <palliers>
+        <pallier>
+          <name>Agriculteur en herbe</name>
+          <logo></logo>
+          <seuil>5</seuil>
+          <idcible>2</idcible>
+          <ratio>2</ratio>
+          <typeratio>gain</typeratio>
+          <unlocked>false</unlocked>
+        </pallier>
+        <pallier>
+            <name>Agriculteur engagé</name>
+            <logo></logo>
+            <seuil>10</seuil>
+            <idcible>2</idcible>
+            <ratio>2</ratio>
+            <typeratio>vitesse</typeratio>
+            <unlocked>false</unlocked>
+        </pallier>
+        <pallier>
+            <name>Agriculteur productif</name>
+            <logo></logo>
+            <seuil>15</seuil>
+            <idcible>2</idcible>
+            <ratio>3</ratio>
+            <typeratio>ange</typeratio>
+            <unlocked>false</unlocked>
+        </pallier>
+      </palliers>
+    </product>
+  </products>
+  <allunlocks>
+    <pallier>
+      <name>Jeune travailleur</name>
+      <logo></logo>
+      <seuil>5</seuil>
+      <idcible>0</idcible>
+      <ratio>3</ratio>
+      <typeratio>vitesse</typeratio>
+      <unlocked>true</unlocked>
+    </pallier>
+  </allunlocks>
+  <upgrades>
+    <pallier>
+      <name>Marteau de plomb</name>
+      <logo></logo>
+      <seuil>100</seuil>
+      <idcible>1</idcible>
+      <ratio>2</ratio>
+      <typeratio>gain</typeratio>
+      <unlocked>false</unlocked>
+    </pallier>
+    <pallier>
+        <name>Marteau d'argent</name>
+        <logo></logo>
+        <seuil>200</seuil>
+        <idcible>1</idcible>
+        <ratio>2</ratio>
+        <typeratio>vitesse</typeratio>
+        <unlocked>false</unlocked>
+    </pallier>
+    <pallier>
+        <name>Marteau de jade</name>
+        <logo></logo>
+        <seuil>300</seuil>
+        <idcible>1</idcible>
+        <ratio>2</ratio>
+        <typeratio>ange</typeratio>
+        <unlocked>false</unlocked>
+    </pallier>
+    <pallier>
+        <name>Faucille de plomb</name>
+        <logo></logo>
+        <seuil>100</seuil>
+        <idcible></idcible>
+        <ratio>2</ratio>
+        <typeratio>gain</typeratio>
+        <unlocked>false</unlocked>
+    </pallier>
+    <pallier>
+        <name>Faucille d'argent</name>
+        <logo></logo>
+        <seuil>200</seuil>
+        <idcible></idcible>
+        <ratio>2</ratio>
+        <typeratio>vitesse</typeratio>
+        <unlocked>false</unlocked>
+    </pallier>
+    <pallier>
+        <name>Faucille de jade</name>
+        <logo></logo>
+        <seuil>300</seuil>
+        <idcible></idcible>
+        <ratio>2</ratio>
+        <typeratio>ange</typeratio>
+        <unlocked>false</unlocked>
+    </pallier>
+  </upgrades>
+  <angelupgrades>
+    <pallier>
+      <name>Ange apprenti travailleur</name>
+      <logo></logo>
+      <seuil>100</seuil>
+      <idcible>-1</idcible>
+      <ratio>2</ratio>
+      <typeratio>anges</typeratio>
+      <unlocked>false</unlocked>
+    </pallier>
+    <pallier>
+        <name>Ange travailleur confirmé</name>
+        <logo></logo>
+        <seuil>200</seuil>
+        <idcible>0</idcible>
+        <ratio>2</ratio>
+        <typeratio>gain</typeratio>
+        <unlocked>false</unlocked>
+      </pallier>
+  </angelupgrades>
+  <managers>
+    <pallier>
+      <name></name>
+      <logo>Karl Marx</logo>
+      <seuil>250</seuil>
+      <idcible>0</idcible>
+      <ratio></ratio>
+      <typeratio></typeratio>
+      <unlocked>false</unlocked>
+    </pallier>
+    <pallier>
+        <name></name>
+        <logo>Lénine</logo>
+        <seuil>500</seuil>
+        <idcible>0</idcible>
+        <ratio></ratio>
+        <typeratio></typeratio>
+        <unlocked>false</unlocked>
+      </pallier>
+  </managers>
+</world>
