@@ -79,11 +79,11 @@ public class Services {
             return false;
         int qtchange = newproduct.getQuantite() - product.getQuantite();
         if (qtchange > 0) {
-            // soustraire de l'argent du joueur le coût de la quantité
-            // mettre à jour la quantité de product
+        	double money = world.getMoney();
+            world.setMoney(money-product.getCout());
+            product.setQuantite(product.getQuantite()-qtchange);
         } else {
-            // initialiser product.timeleft à product.vitesse
-            // pour lancer la prod
+        	product.setTimeleft(product.getVitesse());
         }
         saveWordlToXml(world, username);
         return true;
@@ -105,10 +105,4 @@ public class Services {
     }
 
 }
-    World getWorld() {
-        World world  = new World();
-        saveWordlToXml(world);
-        return world;
-    }
 
-}
