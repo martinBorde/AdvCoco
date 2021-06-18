@@ -12,7 +12,7 @@
     <product>
       <id>1</id>
       <name>marteau</name>
-      <logo>icones/marteau.jpg</logo>
+      <logo>marteau.jpg</logo>
       <cout>2</cout>
       <croissance>2</croissance>
       <revenu>4</revenu>
@@ -53,7 +53,7 @@
     <product>
       <id>2</id>
       <name>Faucille</name>
-      <logo>icones/faucille.jpg</logo>
+      <logo>faucille.jpg</logo>
       <cout>4</cout>
       <croissance>4</croissance>
       <revenu>6</revenu>
@@ -182,7 +182,7 @@
   <managers>
     <pallier>
       <name>Karl Marx</name>
-      <logo>icones/Marx.jpg</logo>
+      <logo>Marx.jpg</logo>
       <seuil>250</seuil>
       <idcible>0</idcible>
       <ratio></ratio>
@@ -191,7 +191,7 @@
     </pallier>
     <pallier>
         <name>Che</name>
-        <logo>icones/Che.jpg</logo>
+        <logo>Che.jpg</logo>
         <seuil>500</seuil>
         <idcible>0</idcible>
         <ratio></ratio>
