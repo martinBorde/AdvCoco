@@ -56,12 +56,13 @@ public class Services {
 
     World getWorld(String username) {
         World world = readWorldFromXml(username);
-        // mise à jour du score
+        //updateScore(world, username);
         saveWordlToXml(world, username);
         return world;
     }
     
-    void updateScore(String username, World world) {
+    public boolean updateScore(World newworld, String username) {
+    	return true;
     	
     }
     
