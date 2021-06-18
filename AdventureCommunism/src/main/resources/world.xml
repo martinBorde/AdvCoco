@@ -12,7 +12,7 @@
     <product>
       <id>1</id>
       <name>marteau</name>
-      <logo>icones/marteau</logo>
+      <logo>icones/marteau.jpg</logo>
       <cout>2</cout>
       <croissance>2</croissance>
       <revenu>4</revenu>
