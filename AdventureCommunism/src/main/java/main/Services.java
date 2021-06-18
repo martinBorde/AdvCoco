@@ -6,6 +6,7 @@ import generated.World;
 
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.logging.Level;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 
@@ -14,23 +15,29 @@ import javax.xml.bind.*;
 
 
 public class Services {
+	
     World readWorldFromXml(String username){
         World world = new World();
         InputStream input = null;
+        System.out.println("!!!Init!!!");
         try {
             input = new FileInputStream(username+"-world.xml");
+            System.out.println("!!!Recup username world.xml!!!");
         } catch (Exception e) {
-            e.printStackTrace();
+            //e.printStackTrace();
         }
         if (input==null) {
             input = getClass().getClassLoader().getResourceAsStream("world.xml");
+            System.out.println("!!!Recup world.xml!!!");
         }
         try {
             JAXBContext jc = JAXBContext.newInstance(World.class);
             Unmarshaller u = jc.createUnmarshaller();
             world = (World) u.unmarshal(input);
+            System.out.println("!!!Unmarshall!!!");
         } catch (Exception e) {
             e.printStackTrace();
+            
         }
         return world;
     }
@@ -48,9 +55,7 @@ public class Services {
     }
 
     World getWorld(String username) {
-        World world = new World();
-        saveWordlToXml(world, username);
-        return world;
+        return readWorldFromXml(username);
     }
     
     public ProductType findProductById(World world, int id) {
