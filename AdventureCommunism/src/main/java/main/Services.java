@@ -55,7 +55,14 @@ public class Services {
     }
 
     World getWorld(String username) {
-        return readWorldFromXml(username);
+        World world = readWorldFromXml(username);
+        // mise à jour du score
+        saveWordlToXml(world, username);
+        return world;
+    }
+    
+    void updateScore(String username, World world) {
+    	
     }
     
     public ProductType findProductById(World world, int id) {
