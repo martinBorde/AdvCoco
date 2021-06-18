@@ -12,11 +12,7 @@
     <product>
       <id>1</id>
       <name>marteau</name>
-<<<<<<< Updated upstream
-      <logo>icones/marteau</logo>
-=======
-      <logo></logo>
->>>>>>> Stashed changes
+      <logo>marteau.jpg</logo>
       <cout>2</cout>
       <croissance>2</croissance>
       <revenu>4</revenu>
@@ -57,16 +53,12 @@
     <product>
       <id>2</id>
       <name>Faucille</name>
-<<<<<<< Updated upstream
-      <logo>icones/faucille.jpg</logo>
-=======
-      <logo></logo>
->>>>>>> Stashed changes
+      <logo>faucille.jpg</logo>
       <cout>4</cout>
       <croissance>4</croissance>
       <revenu>6</revenu>
       <vitesse>4</vitesse>
-      <quantite>0</quantite>
+      <quantite>1</quantite>
       <timeleft>0</timeleft>
       <managerUnlocked>False</managerUnlocked>
       <palliers>
@@ -189,13 +181,8 @@
   </angelupgrades>
   <managers>
     <pallier>
-<<<<<<< Updated upstream
       <name>Karl Marx</name>
-      <logo>icones/Marx.jpg</logo>
-=======
-      <name></name>
-      <logo>Karl Marx</logo>
->>>>>>> Stashed changes
+      <logo>Marx.jpg</logo>
       <seuil>250</seuil>
       <idcible>0</idcible>
       <ratio></ratio>
@@ -203,13 +190,8 @@
       <unlocked>false</unlocked>
     </pallier>
     <pallier>
-<<<<<<< Updated upstream
         <name>Che</name>
-        <logo>icones/Che.jpg</logo>
-=======
-        <name></name>
-        <logo>Lénine</logo>
->>>>>>> Stashed changes
+        <logo>Che.jpg</logo>
         <seuil>500</seuil>
         <idcible>0</idcible>
         <ratio></ratio>
