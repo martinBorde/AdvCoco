@@ -1,12 +1,12 @@
 package main;
 
 import generated.PallierType;
+import generated.ProductsType;
 import generated.ProductType;
 import generated.World;
 
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.util.logging.Level;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 
@@ -24,7 +24,6 @@ public class Services {
             input = new FileInputStream(username+"-world.xml");
             System.out.println("!!!Recup username world.xml!!!");
         } catch (Exception e) {
-            //e.printStackTrace();
         }
         if (input==null) {
             input = getClass().getClassLoader().getResourceAsStream("world.xml");
@@ -56,13 +55,41 @@ public class Services {
 
     World getWorld(String username) {
         World world = readWorldFromXml(username);
-        //updateScore(world, username);
+        updateScore(world);
         saveWordlToXml(world, username);
         return world;
     }
     
-    public boolean updateScore(World newworld, String username) {
-    	return true;
+    public void updateScore(World world) {
+    	long lastUpdate = world.getLastupdate();
+    	world.setLastupdate(System.currentTimeMillis());
+    	long currentUpdate = world.getLastupdate();
+    	long lapsTime = currentUpdate - lastUpdate;
+    	ProductsType products = world.getProducts();
+    	for (ProductType product : products.getProduct()) {
+    		long producted = 0;
+    		long inproduction = 0;
+    		if (product.isManagerUnlocked()) {
+	    		long vitesse = product.getVitesse();
+	    		producted = lapsTime/vitesse;
+	    		inproduction = lapsTime%vitesse;
+	    		if (inproduction!=0) {
+	    			long timeleft = lapsTime - vitesse*producted;
+	    			product.setTimeleft(timeleft);
+	    		}
+    		} else {
+    			if (product.getTimeleft()!=0 && product.getTimeleft()<lapsTime) {
+    				producted = 1;
+    			} else {
+    				product.setTimeleft(product.getTimeleft()-lapsTime);
+    			}
+    		}
+    		double newscore = producted*product.getRevenu();
+    		world.setScore(world.getScore()+newscore);
+    	}	
+    }
+    
+    public void applyBonus(PallierType pallier) {
     	
     }
     
