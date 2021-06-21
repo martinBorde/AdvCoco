@@ -91,7 +91,171 @@
         </pallier>
       </palliers>
     </product>
+  	    <product>
+      <id>3</id>
+      <name>Petit Livre Rouge</name>
+      <logo>livreRouge.jpg</logo>
+      <cout>7</cout>
+      <croissance>4</croissance>
+      <revenu>6</revenu>
+      <vitesse>4</vitesse>
+      <quantite>0</quantite>
+      <timeleft>0</timeleft>
+      <managerUnlocked>False</managerUnlocked>
+      <palliers>
+        <pallier>
+          <name>Livre en carton</name>
+          <logo></logo>
+          <seuil>5</seuil>
+          <idcible>2</idcible>
+          <ratio>2</ratio>
+          <typeratio>gain</typeratio>
+          <unlocked>false</unlocked>
+        </pallier>
+        <pallier>
+            <name>Livre relié</name>
+            <logo></logo>
+            <seuil>10</seuil>
+            <idcible>2</idcible>
+            <ratio>2</ratio>
+            <typeratio>vitesse</typeratio>
+            <unlocked>false</unlocked>
+        </pallier>
+        <pallier>
+            <name>Livre gravé</name>
+            <logo></logo>
+            <seuil>15</seuil>
+            <idcible>2</idcible>
+            <ratio>3</ratio>
+            <typeratio>ange</typeratio>
+            <unlocked>false</unlocked>
+        </pallier>
+      </palliers>
+    </product>
+    <product>
+      <id>4</id>
+      <name>Kolkhoze</name>
+      <logo>kolkhoze.jpg</logo>
+      <cout>15</cout>
+      <croissance>5</croissance>
+      <revenu>8</revenu>
+      <vitesse>5</vitesse>
+      <quantite>0</quantite>
+      <timeleft>0</timeleft>
+      <managerUnlocked>False</managerUnlocked>
+      <palliers>
+        <pallier>
+          <name>Petit kolkhoze</name>
+          <logo></logo>
+          <seuil>5</seuil>
+          <idcible>4</idcible>
+          <ratio>2</ratio>
+          <typeratio>gain</typeratio>
+          <unlocked>false</unlocked>
+        </pallier>
+        <pallier>
+            <name>Kolkhoze moyen</name>
+            <logo></logo>
+            <seuil>10</seuil>
+            <idcible>4</idcible>
+            <ratio>2</ratio>
+            <typeratio>vitesse</typeratio>
+            <unlocked>false</unlocked>
+        </pallier>
+        <pallier>
+            <name>Grand kolkhoze</name>
+            <logo></logo>
+            <seuil>15</seuil>
+            <idcible>4</idcible>
+            <ratio>3</ratio>
+            <typeratio>ange</typeratio>
+            <unlocked>false</unlocked>
+        </pallier>
+      </palliers>
+    </product>
+    <product>
+      <id>5</id>
+      <name>Révolution communiste</name>
+      <logo>revolution.jpg</logo>
+      <cout>30</cout>
+      <croissance>8</croissance>
+      <revenu>10</revenu>
+      <vitesse>4</vitesse>
+      <quantite>0</quantite>
+      <timeleft>0</timeleft>
+      <managerUnlocked>False</managerUnlocked>
+      <palliers>
+        <pallier>
+          <name>Révolution non aboutie</name>
+          <logo></logo>
+          <seuil>5</seuil>
+          <idcible>5</idcible>
+          <ratio>2</ratio>
+          <typeratio>gain</typeratio>
+          <unlocked>false</unlocked>
+        </pallier>
+        <pallier>
+            <name>Révolution partielle</name>
+            <logo></logo>
+            <seuil>10</seuil>
+            <idcible>5</idcible>
+            <ratio>2</ratio>
+            <typeratio>vitesse</typeratio>
+            <unlocked>false</unlocked>
+        </pallier>
+        <pallier>
+            <name>Révolution totale</name>
+            <logo></logo>
+            <seuil>15</seuil>
+            <idcible>5</idcible>
+            <ratio>3</ratio>
+            <typeratio>ange</typeratio>
+            <unlocked>false</unlocked>
+        </pallier>
+      </palliers>
+    </product>
   </products>
+      <product>
+      <id>6</id>
+      <name>Annexer un pays</name>
+      <logo>annexer.jpg</logo>
+      <cout>50</cout>
+      <croissance>6</croissance>
+      <revenu>40</revenu>
+      <vitesse>4</vitesse>
+      <quantite>0</quantite>
+      <timeleft>0</timeleft>
+      <managerUnlocked>False</managerUnlocked>
+      <palliers>
+        <pallier>
+          <name>Petit pays annexé</name>
+          <logo></logo>
+          <seuil>5</seuil>
+          <idcible>6</idcible>
+          <ratio>2</ratio>
+          <typeratio>gain</typeratio>
+          <unlocked>false</unlocked>
+        </pallier>
+        <pallier>
+            <name>Pays moyen annexé</name>
+            <logo></logo>
+            <seuil>10</seuil>
+            <idcible>2</idcible>
+            <ratio>2</ratio>
+            <typeratio>vitesse</typeratio>
+            <unlocked>false</unlocked>
+        </pallier>
+        <pallier>
+            <name>Empire communiste</name>
+            <logo></logo>
+            <seuil>15</seuil>
+            <idcible>6</idcible>
+            <ratio>3</ratio>
+            <typeratio>ange</typeratio>
+            <unlocked>false</unlocked>
+        </pallier>
+      </palliers>
+    </product>
   <allunlocks>
     <pallier>
       <name>Jeune travailleur</name>
