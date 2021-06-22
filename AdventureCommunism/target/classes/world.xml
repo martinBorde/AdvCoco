@@ -16,7 +16,7 @@
       <cout>2</cout>
       <croissance>2</croissance>
       <revenu>4</revenu>
-      <vitesse>2</vitesse>
+      <vitesse>1000</vitesse>
       <quantite>1</quantite>
       <timeleft>0</timeleft>
       <managerUnlocked>false</managerUnlocked>
@@ -57,7 +57,7 @@
       <cout>4</cout>
       <croissance>4</croissance>
       <revenu>6</revenu>
-      <vitesse>4</vitesse>
+      <vitesse>2000</vitesse>
       <quantite>0</quantite>
       <timeleft>0</timeleft>
       <managerUnlocked>False</managerUnlocked>
@@ -98,7 +98,7 @@
       <cout>7</cout>
       <croissance>4</croissance>
       <revenu>6</revenu>
-      <vitesse>4</vitesse>
+      <vitesse>4000</vitesse>
       <quantite>0</quantite>
       <timeleft>0</timeleft>
       <managerUnlocked>False</managerUnlocked>
@@ -139,7 +139,7 @@
       <cout>15</cout>
       <croissance>5</croissance>
       <revenu>8</revenu>
-      <vitesse>5</vitesse>
+      <vitesse>5000</vitesse>
       <quantite>0</quantite>
       <timeleft>0</timeleft>
       <managerUnlocked>False</managerUnlocked>
@@ -180,7 +180,7 @@
       <cout>30</cout>
       <croissance>8</croissance>
       <revenu>10</revenu>
-      <vitesse>4</vitesse>
+      <vitesse>6000</vitesse>
       <quantite>0</quantite>
       <timeleft>0</timeleft>
       <managerUnlocked>False</managerUnlocked>
@@ -214,15 +214,14 @@
         </pallier>
       </palliers>
     </product>
-  </products>
-      <product>
+    <product>
       <id>6</id>
       <name>Annexer un pays</name>
       <logo>annexer.jpg</logo>
       <cout>50</cout>
       <croissance>6</croissance>
       <revenu>40</revenu>
-      <vitesse>4</vitesse>
+      <vitesse>6000</vitesse>
       <quantite>0</quantite>
       <timeleft>0</timeleft>
       <managerUnlocked>False</managerUnlocked>
@@ -256,6 +255,7 @@
         </pallier>
       </palliers>
     </product>
+  </products>
   <allunlocks>
     <pallier>
       <name>Jeune travailleur</name>
