@@ -2,6 +2,7 @@ package main;
 
 import generated.PallierType;
 import generated.ProductsType;
+import generated.TyperatioType;
 import generated.ProductType;
 import generated.World;
 
@@ -67,16 +68,22 @@ public class Services {
     	long lapsTime = currentUpdate - lastUpdate;
     	ProductsType products = world.getProducts();
     	for (ProductType product : products.getProduct()) {
-    		long producted = 0;
-    		long inproduction = 0;
+    		int producted = 0;
     		if (product.isManagerUnlocked()) {
-	    		long vitesse = product.getVitesse();
-	    		producted = lapsTime/vitesse;
-	    		inproduction = lapsTime%vitesse;
-	    		if (inproduction!=0) {
-	    			long timeleft = lapsTime - vitesse*producted;
-	    			product.setTimeleft(timeleft);
-	    		}
+    			// soustraire timeleft à lapstime si lapstime est supérieur ou égal à timeleft
+    			//ou si timeleft est nul
+    			if (product.getTimeleft()<=lapsTime || product.getTimeleft() == 0) {
+    				lapsTime -= product.getTimeleft();
+		    		long vitesse = product.getVitesse();
+		    		producted += lapsTime/vitesse;
+		    		long inproduction = lapsTime%vitesse;
+		    		product.setTimeleft(inproduction);
+    			} else {
+    				//le temps écoulé n'a pas suffit à fair un cycle de production
+    				//on met juste à jour le timeleft
+    				product.setTimeleft(product.getTimeleft()-lapsTime);
+    			}
+	    		
     		} else {
     			if (product.getTimeleft()!=0 && product.getTimeleft()<lapsTime) {
     				producted = 1;
@@ -84,13 +91,15 @@ public class Services {
     				product.setTimeleft(product.getTimeleft()-lapsTime);
     			}
     		}
-    		double newscore = producted*product.getRevenu();
+    		double newscore = producted*product.getRevenu()*product.getQuantite();
     		world.setScore(world.getScore()+newscore);
+    		world.setMoney(world.getMoney()+newscore);
     	}	
     }
     
     public void applyBonus(PallierType pallier) {
     	
+    	pallier.setUnlocked(true);
     }
     
     public ProductType findProductById(World world, int id) {
@@ -125,6 +134,22 @@ public class Services {
         } else {
         	product.setTimeleft(product.getVitesse());
         }
+        for (PallierType pallier : product.getPalliers().getPallier()) {
+        	if (newproduct.getQuantite() >= pallier.getSeuil() && ! pallier.isUnlocked()) {
+        		pallier.setUnlocked(true);
+        		TyperatioType type = pallier.getTyperatio();
+        		double ratio = pallier.getRatio();
+        		if (type.value() == "gain") {
+        			product.setRevenu(product.getRevenu()*ratio);
+        		}
+        		if (type.value() == "vitesse") {
+        			product.setVitesse(product.getVitesse()*(int)ratio);
+        		}
+        		if (type.value() == "ange") {
+        			world.setAngelbonus(world.getAngelbonus()*(int)ratio);
+        		}
+        	}
+        }
         saveWordlToXml(world, username);
         return true;
     }
@@ -146,3 +171,4 @@ public class Services {
 
 }
 
+ 
