@@ -1,5 +1,4 @@
 package main;
-import javax.print.attribute.standard.Media;
 import javax.servlet.http.HttpServletRequest;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
@@ -12,6 +11,7 @@ import javax.ws.rs.core.Response;
 
 import generated.PallierType;
 import generated.ProductType;
+import main.Services;
 
 @Path("generic")
 public class Webservice {
@@ -44,4 +44,31 @@ public class Webservice {
         String username = request.getHeader("X-user");
         return services.updateManager(username, manager);
     }
+    
+    @PUT
+    @Path("upgrade")
+    @Consumes(MediaType.APPLICATION_JSON)
+    public boolean putUpgrades(@Context HttpServletRequest request, PallierType upgrade) {
+    	String username = request.getHeader("X-user");
+    	return services.applyUpgrades(username, upgrade);
+    }
+    
+    @PUT
+    @Path("reset")
+    @Consumes(MediaType.APPLICATION_JSON)
+    public boolean putReset(@Context HttpServletRequest request) {
+    	String username = request.getHeader("X-user");
+    	return services.applyReset(username);
+    }
+    
+    @PUT
+    @Path("angelupgrade")
+    @Consumes(MediaType.APPLICATION_JSON)
+    public boolean putAngelUpgrade(@Context HttpServletRequest request, PallierType angelupgrade) {
+    	String username = request.getHeader("X-user");
+    	return services.applyAngelUpgrade(username, angelupgrade);
+    }
+    
+    
+    
 }
