@@ -1,7 +1,9 @@
 package main;
 import javax.servlet.http.HttpServletRequest;
+
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
+import javax.ws.rs.DELETE;
 import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
@@ -53,10 +55,10 @@ public class Webservice {
     	return services.applyUpgrades(username, upgrade);
     }
     
-    @PUT
-    @Path("reset")
+    @DELETE
+    @Path("world")
     @Consumes(MediaType.APPLICATION_JSON)
-    public boolean putReset(@Context HttpServletRequest request) {
+    public boolean resetWorld(@Context HttpServletRequest request) {
     	String username = request.getHeader("X-user");
     	return services.applyReset(username);
     }
