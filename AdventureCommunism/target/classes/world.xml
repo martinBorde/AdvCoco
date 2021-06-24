@@ -2,7 +2,7 @@
 <world>
   <name>Adventure Communist</name>
   <logo></logo>
-  <money>0</money>
+  <money>50000000000000000000</money>
   <score>0</score>
   <totalangels>0</totalangels>
   <activeangels>0</activeangels>
@@ -22,7 +22,7 @@
       <managerUnlocked>false</managerUnlocked>
       <palliers>
         <pallier>
-          <name>Apprenti Travailleur</name>
+          <name>Petit marteau</name>
           <logo></logo>
           <seuil>5</seuil>
           <idcible>1</idcible>
@@ -31,7 +31,7 @@
           <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>Travailleur confirmé</name>
+            <name>Marteau de taille conséquente</name>
             <logo></logo>
             <seuil>10</seuil>
             <idcible>1</idcible>
@@ -40,7 +40,7 @@
             <unlocked>false</unlocked>
           </pallier>
           <pallier>
-            <name>Travailleur expert</name>
+            <name>Un marteau pour casser le capitalisme</name>
             <logo></logo>
             <seuil>20</seuil>
             <idcible>1</idcible>
@@ -63,7 +63,7 @@
       <managerUnlocked>False</managerUnlocked>
       <palliers>
         <pallier>
-          <name>Agriculteur en herbe</name>
+          <name>Une faucille pour couper de l'herbe</name>
           <logo></logo>
           <seuil>5</seuil>
           <idcible>2</idcible>
@@ -72,7 +72,7 @@
           <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>Agriculteur engagé</name>
+            <name>Ca c'est de la faucille </name>
             <logo></logo>
             <seuil>10</seuil>
             <idcible>2</idcible>
@@ -81,7 +81,7 @@
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>Agriculteur productif</name>
+            <name>Une faucille pour les gouverner toutes</name>
             <logo></logo>
             <seuil>15</seuil>
             <idcible>2</idcible>
@@ -122,7 +122,7 @@
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>Livre gravé</name>
+            <name>Bible rouge</name>
             <logo></logo>
             <seuil>15</seuil>
             <idcible>2</idcible>
@@ -145,7 +145,7 @@
       <managerUnlocked>False</managerUnlocked>
       <palliers>
         <pallier>
-          <name>Petit kolkhoze</name>
+          <name>Petite ferme</name>
           <logo></logo>
           <seuil>5</seuil>
           <idcible>4</idcible>
@@ -154,7 +154,7 @@
           <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>Kolkhoze moyen</name>
+            <name>Un kolkhoze peu en cacher un autre </name>
             <logo></logo>
             <seuil>10</seuil>
             <idcible>4</idcible>
@@ -163,7 +163,7 @@
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>Grand kolkhoze</name>
+            <name>Petit kolkhoze deviendra grand</name>
             <logo></logo>
             <seuil>15</seuil>
             <idcible>4</idcible>
@@ -195,7 +195,7 @@
           <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>Révolution partielle</name>
+            <name>Une révolution se fait sentir</name>
             <logo></logo>
             <seuil>10</seuil>
             <idcible>5</idcible>
@@ -204,7 +204,7 @@
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>Révolution totale</name>
+            <name>Un soir d'octobre</name>
             <logo></logo>
             <seuil>15</seuil>
             <idcible>5</idcible>
@@ -227,7 +227,7 @@
       <managerUnlocked>False</managerUnlocked>
       <palliers>
         <pallier>
-          <name>Petit pays annexé</name>
+          <name>Petite république soeur</name>
           <logo></logo>
           <seuil>5</seuil>
           <idcible>6</idcible>
@@ -236,7 +236,7 @@
           <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>Pays moyen annexé</name>
+            <name>L'Europe de l'Est , quelle belle région</name>
             <logo></logo>
             <seuil>10</seuil>
             <idcible>2</idcible>
@@ -258,9 +258,36 @@
   </products>
   <allunlocks>
     <pallier>
-      <name>Jeune travailleur</name>
-      <logo></logo>
+      <name>Pas de répit, camarades</name>
+      <logo>allunlocks.jpg</logo>
       <seuil>5</seuil>
+      <idcible>0</idcible>
+      <ratio>3</ratio>
+      <typeratio>vitesse</typeratio>
+      <unlocked>true</unlocked>
+    </pallier>
+	<pallier>
+      <name>Un communisme réjouissant</name>
+      <logo>allunlocks.jpg</logo>
+      <seuil>10</seuil>
+      <idcible>0</idcible>
+      <ratio>3</ratio>
+      <typeratio>vitesse</typeratio>
+      <unlocked>true</unlocked>
+    </pallier>
+	<pallier>
+      <name>Le capitalisme bat de l'aile</name>
+      <logo>allunlocks.jpg</logo>
+      <seuil>15</seuil>
+      <idcible>0</idcible>
+      <ratio>3</ratio>
+      <typeratio>vitesse</typeratio>
+      <unlocked>true</unlocked>
+    </pallier>
+	<pallier>
+      <name>Un monde en paix</name>
+      <logo>allunlocks.jpg</logo>
+      <seuil>20</seuil>
       <idcible>0</idcible>
       <ratio>3</ratio>
       <typeratio>vitesse</typeratio>
@@ -322,10 +349,118 @@
         <typeratio>ange</typeratio>
         <unlocked>false</unlocked>
     </pallier>
+	<pallier>
+      <name>Chapitre supplémentaire</name>
+      <logo></logo>
+      <seuil>100</seuil>
+      <idcible>2</idcible>
+      <ratio>2</ratio>
+      <typeratio>gain</typeratio>
+      <unlocked>false</unlocked>
+    </pallier>
+    <pallier>
+        <name>Le tome 2 est arrivé</name>
+        <logo></logo>
+        <seuil>200</seuil>
+        <idcible>2</idcible>
+        <ratio>2</ratio>
+        <typeratio>vitesse</typeratio>
+        <unlocked>false</unlocked>
+    </pallier>
+    <pallier>
+        <name>Une encyclopédie rouge</name>
+        <logo></logo>
+        <seuil>300</seuil>
+        <idcible>2</idcible>
+        <ratio>2</ratio>
+        <typeratio>ange</typeratio>
+        <unlocked>false</unlocked>
+    </pallier>
+	<pallier>
+      <name>Deux fermiers valent mieux qu'un</name>
+      <logo></logo>
+      <seuil>100</seuil>
+      <idcible>3</idcible>
+      <ratio>2</ratio>
+      <typeratio>gain</typeratio>
+      <unlocked>false</unlocked>
+    </pallier>
+    <pallier>
+        <name>Trois aussi</name>
+        <logo></logo>
+        <seuil>200</seuil>
+        <idcible>3</idcible>
+        <ratio>2</ratio>
+        <typeratio>vitesse</typeratio>
+        <unlocked>false</unlocked>
+    </pallier>
+    <pallier>
+        <name>Un tracteur !!</name>
+        <logo></logo>
+        <seuil>300</seuil>
+        <idcible>3</idcible>
+        <ratio>2</ratio>
+        <typeratio>ange</typeratio>
+        <unlocked>false</unlocked>
+    </pallier>
+	<pallier>
+      <name>Des armes pour la révolution !</name>
+      <logo></logo>
+      <seuil>100</seuil>
+      <idcible>4</idcible>
+      <ratio>2</ratio>
+      <typeratio>gain</typeratio>
+      <unlocked>false</unlocked>
+    </pallier>
+    <pallier>
+        <name>Un peuple, une révolution</name>
+        <logo></logo>
+        <seuil>200</seuil>
+        <idcible>4</idcible>
+        <ratio>2</ratio>
+        <typeratio>vitesse</typeratio>
+        <unlocked>false</unlocked>
+    </pallier>
+    <pallier>
+        <name>Prodige communiste</name>
+        <logo></logo>
+        <seuil>300</seuil>
+        <idcible>4</idcible>
+        <ratio>2</ratio>
+        <typeratio>ange</typeratio>
+        <unlocked>false</unlocked>
+    </pallier>
+	<pallier>
+      <name>Une armée plus grosse</name>
+      <logo></logo>
+      <seuil>100</seuil>
+      <idcible>5</idcible>
+      <ratio>2</ratio>
+      <typeratio>gain</typeratio>
+      <unlocked>false</unlocked>
+    </pallier>
+    <pallier>
+        <name>Des blindés</name>
+        <logo></logo>
+        <seuil>200</seuil>
+        <idcible>5</idcible>
+        <ratio>2</ratio>
+        <typeratio>vitesse</typeratio>
+        <unlocked>false</unlocked>
+    </pallier>
+    <pallier>
+        <name>Des avions</name>
+        <logo></logo>
+        <seuil>300</seuil>
+        <idcible>5</idcible>
+        <ratio>2</ratio>
+        <typeratio>ange</typeratio>
+        <unlocked>false</unlocked>
+    </pallier>
   </upgrades>
   <angelupgrades>
     <pallier>
-      <name>Ange apprenti travailleur</name>
+      <name>Des camarades efficaces</name>
       <logo></logo>
       <seuil>100</seuil>
       <idcible>-1</idcible>
@@ -334,7 +469,7 @@
       <unlocked>false</unlocked>
     </pallier>
     <pallier>
-        <name>Ange travailleur confirmé</name>
+        <name>Des travailleurs arrivent de partout</name>
         <logo></logo>
         <seuil>200</seuil>
         <idcible>0</idcible>
@@ -354,13 +489,49 @@
       <unlocked>false</unlocked>
     </pallier>
     <pallier>
-        <name>Che</name>
+        <name>Ernesto Che Guevara</name>
         <logo>Che.jpg</logo>
         <seuil>500</seuil>
-        <idcible>0</idcible>
+        <idcible>1</idcible>
         <ratio></ratio>
         <typeratio></typeratio>
         <unlocked>false</unlocked>
-      </pallier>
+  </pallier>
+  <pallier>
+      <name>Mao Ze dong</name>
+      <logo>mao.jpg</logo>
+      <seuil>750</seuil>
+      <idcible>2</idcible>
+      <ratio></ratio>
+      <typeratio></typeratio>
+      <unlocked>false</unlocked>
+    </pallier>
+    <pallier>
+        <name>Leon Trotsky</name>
+        <logo>leon.jpg</logo>
+        <seuil>1000</seuil>
+        <idcible>3</idcible>
+        <ratio></ratio>
+        <typeratio></typeratio>
+        <unlocked>false</unlocked>
+    </pallier>
+	<pallier>
+      <name>Vladimir Llitch Lenine</name>
+      <logo>lenine.jpg</logo>
+      <seuil>2000</seuil>
+      <idcible>4</idcible>
+      <ratio></ratio>
+      <typeratio></typeratio>
+      <unlocked>false</unlocked>
+    </pallier>
+    <pallier>
+        <name>Joseph Vissarionovitch Djougachvili</name>
+        <logo>staline.jpg</logo>
+        <seuil>5000</seuil>
+        <idcible>5</idcible>
+        <ratio></ratio>
+        <typeratio></typeratio>
+        <unlocked>false</unlocked>
+    </pallier>
   </managers>
 </world>
