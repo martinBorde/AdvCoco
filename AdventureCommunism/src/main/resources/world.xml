@@ -2,7 +2,7 @@
 <world>
   <name>Adventure Communist</name>
   <logo></logo>
-  <money>0</money>
+  <money>50000000000000000000</money>
   <score>0</score>
   <totalangels>0</totalangels>
   <activeangels>0</activeangels>
@@ -259,7 +259,7 @@
   <allunlocks>
     <pallier>
       <name>Pas de répit, camarades</name>
-      <logo></logo>
+      <logo>allunlocks.jpg</logo>
       <seuil>5</seuil>
       <idcible>0</idcible>
       <ratio>3</ratio>
@@ -268,8 +268,8 @@
     </pallier>
 	<pallier>
       <name>Un communisme réjouissant</name>
-      <logo></logo>
-      <seuil>5</seuil>
+      <logo>allunlocks.jpg</logo>
+      <seuil>10</seuil>
       <idcible>0</idcible>
       <ratio>3</ratio>
       <typeratio>vitesse</typeratio>
@@ -277,8 +277,8 @@
     </pallier>
 	<pallier>
       <name>Le capitalisme bat de l'aile</name>
-      <logo></logo>
-      <seuil>5</seuil>
+      <logo>allunlocks.jpg</logo>
+      <seuil>15</seuil>
       <idcible>0</idcible>
       <ratio>3</ratio>
       <typeratio>vitesse</typeratio>
@@ -286,8 +286,8 @@
     </pallier>
 	<pallier>
       <name>Un monde en paix</name>
-      <logo></logo>
-      <seuil>5</seuil>
+      <logo>allunlocks.jpg</logo>
+      <seuil>20</seuil>
       <idcible>0</idcible>
       <ratio>3</ratio>
       <typeratio>vitesse</typeratio>
@@ -492,7 +492,7 @@
         <name>Ernesto Che Guevara</name>
         <logo>Che.jpg</logo>
         <seuil>500</seuil>
-        <idcible>0</idcible>
+        <idcible>1</idcible>
         <ratio></ratio>
         <typeratio></typeratio>
         <unlocked>false</unlocked>
@@ -501,7 +501,7 @@
       <name>Mao Ze dong</name>
       <logo>mao.jpg</logo>
       <seuil>750</seuil>
-      <idcible>0</idcible>
+      <idcible>2</idcible>
       <ratio></ratio>
       <typeratio></typeratio>
       <unlocked>false</unlocked>
@@ -510,7 +510,7 @@
         <name>Leon Trotsky</name>
         <logo>leon.jpg</logo>
         <seuil>1000</seuil>
-        <idcible>0</idcible>
+        <idcible>3</idcible>
         <ratio></ratio>
         <typeratio></typeratio>
         <unlocked>false</unlocked>
@@ -519,7 +519,7 @@
       <name>Vladimir Llitch Lenine</name>
       <logo>lenine.jpg</logo>
       <seuil>2000</seuil>
-      <idcible>0</idcible>
+      <idcible>4</idcible>
       <ratio></ratio>
       <typeratio></typeratio>
       <unlocked>false</unlocked>
@@ -528,7 +528,7 @@
         <name>Joseph Vissarionovitch Djougachvili</name>
         <logo>staline.jpg</logo>
         <seuil>5000</seuil>
-        <idcible>0</idcible>
+        <idcible>5</idcible>
         <ratio></ratio>
         <typeratio></typeratio>
         <unlocked>false</unlocked>
