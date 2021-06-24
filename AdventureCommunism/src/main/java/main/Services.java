@@ -209,7 +209,7 @@ public class Services {
     	return true;
     }
     
-    // possibilité de factoriser avec apply Upgrade
+    // possibilité de factoriser avec applyUpgrades
     public boolean applyAngelUpgrade(String username, PallierType angelupgrade) {
     	World world = getWorld(username);
     	if (world.getActiveangels() - angelupgrade.getSeuil() < 0)
