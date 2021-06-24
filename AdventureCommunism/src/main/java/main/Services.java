@@ -138,6 +138,7 @@ public class Services {
         	product.setTimeleft(product.getVitesse());
         }
         for (PallierType pallier : product.getPalliers().getPallier()) {
+        	applyAllunlock(pallier, world);
         	if (newproduct.getQuantite() >= pallier.getSeuil() && ! pallier.isUnlocked()) {
         		applyPallier(pallier, product, world);
         	}
@@ -157,6 +158,7 @@ public class Services {
         if (product == null)
             return false;
         manager.setUnlocked(true);
+        product.setManagerUnlocked(true);
         double money = world.getMoney();
         world.setMoney(money-manager.getSeuil());
         saveWordlToXml(world, username);
@@ -227,6 +229,15 @@ public class Services {
     	return true;
     }
     
+    public boolean applyAllunlock(PallierType allunlock, World world) {
+    	for (ProductType product : world.getProducts().getProduct()) {
+    		if (product.getQuantite() < allunlock.getSeuil()) {
+    			return false;
+    		}
+    	}
+    	allunlock.setUnlocked(true);
+    	return true;
+    }
     
 
 }
