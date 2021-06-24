@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <world>
   <name>Adventure Communist</name>
-  <logo></logo>
+  <logo>imagemonde.jpg</logo>
   <money>50000000000000000000</money>
   <score>0</score>
   <totalangels>0</totalangels>
@@ -11,12 +11,12 @@
   <products>
     <product>
       <id>1</id>
-      <name>marteau</name>
+      <name>Marteau</name>
       <logo>marteau.jpg</logo>
-      <cout>2</cout>
-      <croissance>2</croissance>
-      <revenu>4</revenu>
-      <vitesse>1000</vitesse>
+      <cout>4</cout>
+      <croissance>1.1</croissance>
+      <revenu>2</revenu>
+      <vitesse>2000</vitesse>
       <quantite>1</quantite>
       <timeleft>0</timeleft>
       <managerUnlocked>false</managerUnlocked>
@@ -24,7 +24,7 @@
         <pallier>
           <name>Petit marteau</name>
           <logo></logo>
-          <seuil>5</seuil>
+          <seuil>10</seuil>
           <idcible>1</idcible>
           <ratio>2</ratio>
           <typeratio>gain</typeratio>
@@ -33,19 +33,19 @@
         <pallier>
             <name>Marteau de taille conséquente</name>
             <logo></logo>
-            <seuil>10</seuil>
+            <seuil>25</seuil>
             <idcible>1</idcible>
-            <ratio>2</ratio>
+            <ratio>1.5</ratio>
             <typeratio>vitesse</typeratio>
             <unlocked>false</unlocked>
           </pallier>
           <pallier>
             <name>Un marteau pour casser le capitalisme</name>
             <logo></logo>
-            <seuil>20</seuil>
+            <seuil>50</seuil>
             <idcible>1</idcible>
-            <ratio>3</ratio>
-            <typeratio>ange</typeratio>
+            <ratio>2</ratio>
+            <typeratio>gain</typeratio>
             <unlocked>false</unlocked>
           </pallier>
       </palliers>
@@ -54,10 +54,10 @@
       <id>2</id>
       <name>Faucille</name>
       <logo>faucille.jpg</logo>
-      <cout>4</cout>
-      <croissance>4</croissance>
+      <cout>8</cout>
+      <croissance>1.2</croissance>
       <revenu>6</revenu>
-      <vitesse>2000</vitesse>
+      <vitesse>4000</vitesse>
       <quantite>0</quantite>
       <timeleft>0</timeleft>
       <managerUnlocked>False</managerUnlocked>
@@ -65,27 +65,27 @@
         <pallier>
           <name>Une faucille pour couper de l'herbe</name>
           <logo></logo>
-          <seuil>5</seuil>
+          <seuil>10</seuil>
           <idcible>2</idcible>
-          <ratio>2</ratio>
+          <ratio>1.5</ratio>
           <typeratio>gain</typeratio>
           <unlocked>false</unlocked>
         </pallier>
         <pallier>
             <name>Ca c'est de la faucille </name>
             <logo></logo>
-            <seuil>10</seuil>
+            <seuil>25</seuil>
             <idcible>2</idcible>
-            <ratio>2</ratio>
+            <ratio>1.5</ratio>
             <typeratio>vitesse</typeratio>
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
             <name>Une faucille pour les gouverner toutes</name>
             <logo></logo>
-            <seuil>15</seuil>
+            <seuil>50</seuil>
             <idcible>2</idcible>
-            <ratio>3</ratio>
+            <ratio>1.5</ratio>
             <typeratio>ange</typeratio>
             <unlocked>false</unlocked>
         </pallier>
@@ -95,9 +95,9 @@
       <id>3</id>
       <name>Petit Livre Rouge</name>
       <logo>livreRouge.jpg</logo>
-      <cout>7</cout>
-      <croissance>4</croissance>
-      <revenu>6</revenu>
+      <cout>15</cout>
+      <croissance>1.3</croissance>
+      <revenu>7</revenu>
       <vitesse>4000</vitesse>
       <quantite>0</quantite>
       <timeleft>0</timeleft>
@@ -106,28 +106,28 @@
         <pallier>
           <name>Livre en carton</name>
           <logo></logo>
-          <seuil>5</seuil>
+          <seuil>10</seuil>
           <idcible>2</idcible>
-          <ratio>2</ratio>
+          <ratio>1.5</ratio>
           <typeratio>gain</typeratio>
           <unlocked>false</unlocked>
         </pallier>
         <pallier>
             <name>Livre relié</name>
             <logo></logo>
-            <seuil>10</seuil>
+            <seuil>25</seuil>
             <idcible>2</idcible>
-            <ratio>2</ratio>
+            <ratio>1.5</ratio>
             <typeratio>vitesse</typeratio>
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
             <name>Bible rouge</name>
             <logo></logo>
-            <seuil>15</seuil>
+            <seuil>50</seuil>
             <idcible>2</idcible>
-            <ratio>3</ratio>
-            <typeratio>ange</typeratio>
+            <ratio>2</ratio>
+            <typeratio>gain</typeratio>
             <unlocked>false</unlocked>
         </pallier>
       </palliers>
@@ -136,9 +136,9 @@
       <id>4</id>
       <name>Kolkhoze</name>
       <logo>kolkhoze.jpg</logo>
-      <cout>15</cout>
-      <croissance>5</croissance>
-      <revenu>8</revenu>
+      <cout>30</cout>
+      <croissance>1.3</croissance>
+      <revenu>20</revenu>
       <vitesse>5000</vitesse>
       <quantite>0</quantite>
       <timeleft>0</timeleft>
@@ -147,27 +147,27 @@
         <pallier>
           <name>Petite ferme</name>
           <logo></logo>
-          <seuil>5</seuil>
+          <seuil>10</seuil>
           <idcible>4</idcible>
-          <ratio>2</ratio>
+          <ratio>1.5</ratio>
           <typeratio>gain</typeratio>
           <unlocked>false</unlocked>
         </pallier>
         <pallier>
             <name>Un kolkhoze peu en cacher un autre </name>
             <logo></logo>
-            <seuil>10</seuil>
+            <seuil>25</seuil>
             <idcible>4</idcible>
-            <ratio>2</ratio>
+            <ratio>1.5</ratio>
             <typeratio>vitesse</typeratio>
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
             <name>Petit kolkhoze deviendra grand</name>
             <logo></logo>
-            <seuil>15</seuil>
+            <seuil>50</seuil>
             <idcible>4</idcible>
-            <ratio>3</ratio>
+            <ratio>2</ratio>
             <typeratio>ange</typeratio>
             <unlocked>false</unlocked>
         </pallier>
@@ -177,9 +177,9 @@
       <id>5</id>
       <name>Révolution communiste</name>
       <logo>revolution.jpg</logo>
-      <cout>30</cout>
-      <croissance>8</croissance>
-      <revenu>10</revenu>
+      <cout>50</cout>
+      <croissance>1.6</croissance>
+      <revenu>35</revenu>
       <vitesse>6000</vitesse>
       <quantite>0</quantite>
       <timeleft>0</timeleft>
@@ -188,28 +188,28 @@
         <pallier>
           <name>Révolution non aboutie</name>
           <logo></logo>
-          <seuil>5</seuil>
+          <seuil>10</seuil>
           <idcible>5</idcible>
-          <ratio>2</ratio>
-          <typeratio>gain</typeratio>
+          <ratio>1.5</ratio>
+          <typeratio>vitesse</typeratio>
           <unlocked>false</unlocked>
         </pallier>
         <pallier>
             <name>Une révolution se fait sentir</name>
             <logo></logo>
-            <seuil>10</seuil>
+            <seuil>25</seuil>
             <idcible>5</idcible>
             <ratio>2</ratio>
-            <typeratio>vitesse</typeratio>
+            <typeratio>gain</typeratio>
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
             <name>Un soir d'octobre</name>
             <logo></logo>
-            <seuil>15</seuil>
+            <seuil>50</seuil>
             <idcible>5</idcible>
-            <ratio>3</ratio>
-            <typeratio>ange</typeratio>
+            <ratio>2</ratio>
+            <typeratio>gain</typeratio>
             <unlocked>false</unlocked>
         </pallier>
       </palliers>
@@ -218,10 +218,10 @@
       <id>6</id>
       <name>Annexer un pays</name>
       <logo>annexer.jpg</logo>
-      <cout>50</cout>
-      <croissance>6</croissance>
-      <revenu>40</revenu>
-      <vitesse>6000</vitesse>
+      <cout>100</cout>
+      <croissance>1.7</croissance>
+      <revenu>70</revenu>
+      <vitesse>7000</vitesse>
       <quantite>0</quantite>
       <timeleft>0</timeleft>
       <managerUnlocked>False</managerUnlocked>
@@ -229,27 +229,27 @@
         <pallier>
           <name>Petite république soeur</name>
           <logo></logo>
-          <seuil>5</seuil>
+          <seuil>10</seuil>
           <idcible>6</idcible>
-          <ratio>2</ratio>
-          <typeratio>gain</typeratio>
+          <ratio>1.5</ratio>
+          <typeratio>vitesse</typeratio>
           <unlocked>false</unlocked>
         </pallier>
         <pallier>
             <name>L'Europe de l'Est , quelle belle région</name>
             <logo></logo>
-            <seuil>10</seuil>
+            <seuil>25</seuil>
             <idcible>2</idcible>
             <ratio>2</ratio>
-            <typeratio>vitesse</typeratio>
+            <typeratio>gain</typeratio>
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
             <name>Empire communiste</name>
             <logo></logo>
-            <seuil>15</seuil>
+            <seuil>50</seuil>
             <idcible>6</idcible>
-            <ratio>3</ratio>
+            <ratio>2</ratio>
             <typeratio>ange</typeratio>
             <unlocked>false</unlocked>
         </pallier>
@@ -260,38 +260,38 @@
     <pallier>
       <name>Pas de répit, camarades</name>
       <logo>allunlocks.jpg</logo>
-      <seuil>5</seuil>
+      <seuil>10</seuil>
       <idcible>0</idcible>
-      <ratio>3</ratio>
+      <ratio>1.5</ratio>
       <typeratio>vitesse</typeratio>
-      <unlocked>true</unlocked>
+      <unlocked>false</unlocked>
     </pallier>
 	<pallier>
       <name>Un communisme réjouissant</name>
       <logo>allunlocks.jpg</logo>
-      <seuil>10</seuil>
+      <seuil>25</seuil>
       <idcible>0</idcible>
-      <ratio>3</ratio>
+      <ratio>1.5</ratio>
       <typeratio>vitesse</typeratio>
-      <unlocked>true</unlocked>
+      <unlocked>false</unlocked>
     </pallier>
 	<pallier>
       <name>Le capitalisme bat de l'aile</name>
       <logo>allunlocks.jpg</logo>
-      <seuil>15</seuil>
+      <seuil>50</seuil>
       <idcible>0</idcible>
-      <ratio>3</ratio>
-      <typeratio>vitesse</typeratio>
-      <unlocked>true</unlocked>
+      <ratio>2</ratio>
+      <typeratio>gain</typeratio>
+      <unlocked>false</unlocked>
     </pallier>
 	<pallier>
       <name>Un monde en paix</name>
       <logo>allunlocks.jpg</logo>
-      <seuil>20</seuil>
+      <seuil>100</seuil>
       <idcible>0</idcible>
-      <ratio>3</ratio>
+      <ratio>2</ratio>
       <typeratio>vitesse</typeratio>
-      <unlocked>true</unlocked>
+      <unlocked>false</unlocked>
     </pallier>
   </allunlocks>
   <upgrades>
@@ -300,7 +300,7 @@
       <logo></logo>
       <seuil>100</seuil>
       <idcible>1</idcible>
-      <ratio>2</ratio>
+      <ratio>1.6</ratio>
       <typeratio>gain</typeratio>
       <unlocked>false</unlocked>
     </pallier>
@@ -309,7 +309,7 @@
         <logo></logo>
         <seuil>200</seuil>
         <idcible>1</idcible>
-        <ratio>2</ratio>
+        <ratio>1.6</ratio>
         <typeratio>vitesse</typeratio>
         <unlocked>false</unlocked>
     </pallier>
@@ -318,7 +318,7 @@
         <logo></logo>
         <seuil>300</seuil>
         <idcible>1</idcible>
-        <ratio>2</ratio>
+        <ratio>1.6</ratio>
         <typeratio>ange</typeratio>
         <unlocked>false</unlocked>
     </pallier>
@@ -326,8 +326,8 @@
         <name>Faucille de plomb</name>
         <logo></logo>
         <seuil>100</seuil>
-        <idcible></idcible>
-        <ratio>2</ratio>
+        <idcible>2</idcible>
+        <ratio>1.6</ratio>
         <typeratio>gain</typeratio>
         <unlocked>false</unlocked>
     </pallier>
@@ -335,8 +335,8 @@
         <name>Faucille d'argent</name>
         <logo></logo>
         <seuil>200</seuil>
-        <idcible></idcible>
-        <ratio>2</ratio>
+        <idcible>2</idcible>
+        <ratio>1.6</ratio>
         <typeratio>vitesse</typeratio>
         <unlocked>false</unlocked>
     </pallier>
@@ -344,8 +344,8 @@
         <name>Faucille de jade</name>
         <logo></logo>
         <seuil>300</seuil>
-        <idcible></idcible>
-        <ratio>2</ratio>
+        <idcible>2</idcible>
+        <ratio>1.6</ratio>
         <typeratio>ange</typeratio>
         <unlocked>false</unlocked>
     </pallier>
@@ -353,8 +353,8 @@
       <name>Chapitre supplémentaire</name>
       <logo></logo>
       <seuil>100</seuil>
-      <idcible>2</idcible>
-      <ratio>2</ratio>
+      <idcible>3</idcible>
+      <ratio>1.6</ratio>
       <typeratio>gain</typeratio>
       <unlocked>false</unlocked>
     </pallier>
@@ -362,8 +362,8 @@
         <name>Le tome 2 est arrivé</name>
         <logo></logo>
         <seuil>200</seuil>
-        <idcible>2</idcible>
-        <ratio>2</ratio>
+        <idcible>3</idcible>
+        <ratio>1.6</ratio>
         <typeratio>vitesse</typeratio>
         <unlocked>false</unlocked>
     </pallier>
@@ -371,8 +371,8 @@
         <name>Une encyclopédie rouge</name>
         <logo></logo>
         <seuil>300</seuil>
-        <idcible>2</idcible>
-        <ratio>2</ratio>
+        <idcible>3</idcible>
+        <ratio>1.6</ratio>
         <typeratio>ange</typeratio>
         <unlocked>false</unlocked>
     </pallier>
@@ -380,8 +380,8 @@
       <name>Deux fermiers valent mieux qu'un</name>
       <logo></logo>
       <seuil>100</seuil>
-      <idcible>3</idcible>
-      <ratio>2</ratio>
+      <idcible>4</idcible>
+      <ratio>1.6</ratio>
       <typeratio>gain</typeratio>
       <unlocked>false</unlocked>
     </pallier>
@@ -389,8 +389,8 @@
         <name>Trois aussi</name>
         <logo></logo>
         <seuil>200</seuil>
-        <idcible>3</idcible>
-        <ratio>2</ratio>
+        <idcible>4</idcible>
+        <ratio>1.6</ratio>
         <typeratio>vitesse</typeratio>
         <unlocked>false</unlocked>
     </pallier>
@@ -398,8 +398,8 @@
         <name>Un tracteur !!</name>
         <logo></logo>
         <seuil>300</seuil>
-        <idcible>3</idcible>
-        <ratio>2</ratio>
+        <idcible>4</idcible>
+        <ratio>1.6</ratio>
         <typeratio>ange</typeratio>
         <unlocked>false</unlocked>
     </pallier>
@@ -407,8 +407,8 @@
       <name>Des armes pour la révolution !</name>
       <logo></logo>
       <seuil>100</seuil>
-      <idcible>4</idcible>
-      <ratio>2</ratio>
+      <idcible>5</idcible>
+      <ratio>1.6</ratio>
       <typeratio>gain</typeratio>
       <unlocked>false</unlocked>
     </pallier>
@@ -416,8 +416,8 @@
         <name>Un peuple, une révolution</name>
         <logo></logo>
         <seuil>200</seuil>
-        <idcible>4</idcible>
-        <ratio>2</ratio>
+        <idcible>5</idcible>
+        <ratio>1.6</ratio>
         <typeratio>vitesse</typeratio>
         <unlocked>false</unlocked>
     </pallier>
@@ -425,8 +425,8 @@
         <name>Prodige communiste</name>
         <logo></logo>
         <seuil>300</seuil>
-        <idcible>4</idcible>
-        <ratio>2</ratio>
+        <idcible>5</idcible>
+        <ratio>1.6</ratio>
         <typeratio>ange</typeratio>
         <unlocked>false</unlocked>
     </pallier>
@@ -434,8 +434,8 @@
       <name>Une armée plus grosse</name>
       <logo></logo>
       <seuil>100</seuil>
-      <idcible>5</idcible>
-      <ratio>2</ratio>
+      <idcible>6</idcible>
+      <ratio>1.6</ratio>
       <typeratio>gain</typeratio>
       <unlocked>false</unlocked>
     </pallier>
@@ -443,8 +443,8 @@
         <name>Des blindés</name>
         <logo></logo>
         <seuil>200</seuil>
-        <idcible>5</idcible>
-        <ratio>2</ratio>
+        <idcible>6</idcible>
+        <ratio>1.6</ratio>
         <typeratio>vitesse</typeratio>
         <unlocked>false</unlocked>
     </pallier>
@@ -452,8 +452,8 @@
         <name>Des avions</name>
         <logo></logo>
         <seuil>300</seuil>
-        <idcible>5</idcible>
-        <ratio>2</ratio>
+        <idcible>6</idcible>
+        <ratio>1.6</ratio>
         <typeratio>ange</typeratio>
         <unlocked>false</unlocked>
     </pallier>
@@ -464,7 +464,7 @@
       <logo></logo>
       <seuil>100</seuil>
       <idcible>-1</idcible>
-      <ratio>2</ratio>
+      <ratio>1.4</ratio>
       <typeratio>anges</typeratio>
       <unlocked>false</unlocked>
     </pallier>
@@ -473,7 +473,7 @@
         <logo></logo>
         <seuil>200</seuil>
         <idcible>0</idcible>
-        <ratio>2</ratio>
+        <ratio>1.4</ratio>
         <typeratio>gain</typeratio>
         <unlocked>false</unlocked>
       </pallier>
@@ -482,7 +482,7 @@
     <pallier>
       <name>Karl Marx</name>
       <logo>Marx.jpg</logo>
-      <seuil>250</seuil>
+      <seuil>500</seuil>
       <idcible>0</idcible>
       <ratio></ratio>
       <typeratio></typeratio>
