@@ -2,7 +2,7 @@
 <world>
   <name>Adventure Communist</name>
   <logo>imagemonde.jpg</logo>
-  <money>50000000000000000000</money>
+  <money>0</money>
   <score>0</score>
   <totalangels>0</totalangels>
   <activeangels>0</activeangels>
